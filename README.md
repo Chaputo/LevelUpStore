@@ -1,4 +1,4 @@
-# compra-ya
+# LEVEL UP STORE
 
-Franco Verdu
-Ecomerce, se vende de todo un poco
+Lucas Acosta
+Venta de videojuegos.
