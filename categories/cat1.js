@@ -5,21 +5,21 @@ document.getElementById('navbar-container').innerHTML = navbar;
 
 const items = [
     {
-        image: 'https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2024/Products/992-II/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg/jcr:content/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg',
-        name: 'Porsche 911 1.56T',
-        description: 'Some quick example text to build on the card title and make up. Some quick example text to build on the card title and make up.',
+        image: 'https://upload.wikimedia.org/wikipedia/en/b/be/GTA3boxcover.jpg',
+        name: 'Grand Theft Auto III',
+        description: 'Grand Theft Auto III (comúnmente abreviado GTA III) es un videojuego de acción y aventura de mundo abierto de disparos en tercera persona desarrollado por DMA Design y publicado por la compañía Rockstar Games.',
         price: '100'
     },
     {
-        image: 'https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2024/Products/992-II/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg/jcr:content/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg',
-        name: 'Porsche Taycan 4S',
-        description: 'Experience electrifying performance with the Porsche Taycan 4S. A perfect blend of luxury and speed.',
+        image: 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/08/grand-theft-auto-iv.jpg?tf=1200x1200',
+        name: 'Grand Theft Auto IV',
+        description: 'Grand Theft Auto IV (abreviado como GTA IV) es un videojuego de acción-aventura de mundo abierto desarrollado por Rockstar North y distribuido por Rockstar Games.',
         price: '120'
     },
     {
-        image: 'https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2024/Products/992-II/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg/jcr:content/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg',
-        name: 'Porsche Macan S',
-        description: 'The Porsche Macan S delivers the ultimate compact SUV experience with powerful performance and premium features.',
+        image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/GI/KA/RY/150380250/actual-1364906194-jpg.jpg',
+        name: 'Grand Theft Auto V',
+        description: 'Grand Theft Auto V (abreviado como GTA V o GTA 5) es un videojuego de acción-aventura de mundo abierto desarrollado por Rockstar North y distribuido por Rockstar Games.',
         price: '80'
     }
 ];
@@ -32,7 +32,7 @@ function renderCards() {
 
   items.forEach(item => {
     cardsHTML += `
-        <div class="col col-6 p-2">
+        <div class="col col-3 p-2">
             ${itemCard(item)}
         </div>
     `;

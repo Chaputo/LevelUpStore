@@ -1,13 +1,13 @@
 const categories = [
-  { title: 'Cat 1', url: '/compra-ya/categories/cat1.html' },
-  { title: 'Cat 2', url: '/compra-ya/categories/cat2.html' },
-  { title: 'Cat 3', url: '/compra-ya/categories/cat3.html' },
+  { title: 'Grand Theft Auto', url: '/categories/cat1.html' },
+  { title: 'Need For Speed', url: '/categories/cat2.html' },
+  { title: 'Forza Horizon', url: '/categories/cat3.html' },
 ]
 
 export const navbar = `
-<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm" style="background-color: #5c5c5c">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/compra-ya/index.html">Compra YA!</a>
+    <a class="navbar-brand" href="/index.html">LEVEL UP</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -17,6 +17,7 @@ export const navbar = `
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
+    
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
@@ -32,7 +33,7 @@ export const navbar = `
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Categorías
+            Buscar por categoría
           </a>
           <ul class="dropdown-menu">
 
@@ -43,32 +44,30 @@ export const navbar = `
           </ul>
         </li>
       </ul>
-      <div class="d-flex justify-content-end" role="search">
-        <button class="btn btn-outline-primary btn-sm me-2" id="carritoButton">
-          Carrito
-          <i class="fa-solid fa-cart-shopping fa-lg"></i>
-        </button>
-        <button class="btn btn-outline-secondary btn-sm" id="logoutButton">
-          Cerrar sesión
-          <i class="fa-solid fa-right-from-bracket fa-lg"></i>
-        </button>
+
+      <a href="/login.html"
+            <form class="d-flex" role="search">
+        
+        <button class="btn btn-outline-success" type="submit">Iniciar Sesión</button>
+      </form>
+          
+           
+          </a>        
+
+      
+      
+        
+        
       </div>
     </div>
   </div>
 </nav>
 `;
 
-function handleCartClick() {
-  alert("Carrito clicado");
-}
 
-function logout() {
-  window.location.href = "/compra-ya/login.html";
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('carritoButton').addEventListener('click', handleCartClick);
-  document.getElementById('logoutButton').addEventListener('click', logout);
-});
+
+
+
 
 export default navbar;
