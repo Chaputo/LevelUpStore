@@ -20,7 +20,7 @@ export const itemCard = (item) => `
             <input
             class="form-control form-control-sm"
             type="number"
-            placeholder="Cantidad"
+            placeholder="1"
             min="0"
             />
         </div>

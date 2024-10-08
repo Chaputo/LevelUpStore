@@ -1,7 +1,7 @@
 const categories = [
-  { title: 'Grand Theft Auto', url: '/categories/cat1.html' },
-  { title: 'Need For Speed', url: '/categories/cat2.html' },
-  { title: 'Forza Horizon', url: '/categories/cat3.html' },
+  { title: 'Grand Theft Auto', url: '/categories/CATgta.html' },
+  { title: 'Need For Speed', url: '/categories/CATnfs.html' },
+  { title: 'Forza Horizon', url: '/categories/CATfh.html' },
 ]
 
 export const navbar = `
