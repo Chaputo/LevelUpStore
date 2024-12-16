@@ -23,6 +23,12 @@
     filter: brightness(80%);
 }
 
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2, green, blue, alpha);
+    cursor: pointer;
+}
+
 .red{
     padding: 45px;
     background-color:antiquewhite
@@ -80,4 +86,29 @@ body{
 
 .navbar-toggler-icon {
     background-color: rgb(168, 168, 168); /* Cambiar el color del icono de toggle */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22rem; /* Garantiza que todas las tarjetas tengan la misma altura */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido */
+    flex-grow: 1;
+}
+
+.card-text {
+    max-height: 18rem; /* Limita la altura de la descripción */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap; /* Alternativamente, puedes usar wrap para varias líneas */
+}
+
+.add-to-cart-btn {
+    margin-top: auto; /* Empuja el botón al final del espacio disponible */
 }
